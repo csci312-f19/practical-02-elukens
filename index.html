@@ -20,15 +20,11 @@
       }
     </style>
   </head>
-
   <body>
 
     <script type="text/javascript">
-      let currentColor = let currentColor = {'red':255, 'green':0, 'blue': 0};
-      const picker = createColorPicker;
-      currentColor = initialValue;
-      callback((value) => console.log(value));
-
+      let currentColor = {'red':255, 'green':0, 'blue':0};
+      const picker = createColorPicker(currentColor, (value) => console.log(value));
       document.body.appendChild(picker);
     </script>
 
